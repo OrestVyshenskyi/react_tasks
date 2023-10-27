@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Simpsons} from "./components/Simpsons/Simpsons";
+import {Characters} from "./components/Characters/Characters";
 let simpsons = [
     {
         name: 'Bart',
@@ -40,9 +41,12 @@ let simpsons = [
 ];
 const App = () => {
     return (
+        // <div>
+        //     <h1 className={"characters"}>Simpsons Team</h1>
+        //     <Simpsons item={simpsons}/>
+        // </div>
         <div>
-            <h1 className={"characters"}>Simpsons Team</h1>
-            <Simpsons item={simpsons}/>
+            <Characters/>
         </div>
     );
 };
